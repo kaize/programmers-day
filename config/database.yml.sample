@@ -1,0 +1,29 @@
+setup: &setup
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *setup
+  database: live_site_development
+  username: postgres
+  password:
+
+test:
+  <<: *setup
+  database: live_site_test
+  username: postgres
+  password:
+  host: /var/run/postgresql
+
+staging:
+  <<: *setup
+  database: live_site_staging
+  username: live_site_staging
+  password:
+
+production:
+  <<: *setup
+  database: live_site_production
+  username: live_site_production
+  password:
