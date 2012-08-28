@@ -1,6 +1,9 @@
 class Web::ApplicationController < ApplicationController
+  include FlashHelper
 
   helper_method :signed_in?, :title, :current_user
+
+  protect_from_forgery
 
   private
 

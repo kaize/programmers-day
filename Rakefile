@@ -9,4 +9,4 @@ begin
 rescue LoadError
 end
 
-MoviesDb::Application.load_tasks
+ProgrammersDay::Application.load_tasks

@@ -1,0 +1,9 @@
+.row
+  .span4
+    .page-header
+      %h1= t('.sign_in')
+    = simple_form_for :session, url: session_path do |f|
+      = f.input :email, input_html: { class: 'span4', value: params_session_email }
+      = f.input :password, input_html: { class: 'span4' }
+      .form-actions
+        = f.button :submit, t('.submit'), class: 'btn-primary pull-right'

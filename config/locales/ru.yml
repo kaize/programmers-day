@@ -1,0 +1,7 @@
+ru:
+  web:
+    sessions:
+      new:
+        sign_in: "Вход"
+        submit: "Войти"
+

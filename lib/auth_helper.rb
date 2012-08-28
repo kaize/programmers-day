@@ -22,4 +22,8 @@ module AuthHelper
     end
   end
 
+  def params_session_email
+    params[:session][:email] if params[:session]
+  end
+
 end
