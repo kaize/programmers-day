@@ -5,25 +5,25 @@ setup: &setup
 
 development:
   <<: *setup
-  database: live_site_development
+  database: programmers_day_development
   username: postgres
   password:
 
 test:
   <<: *setup
-  database: live_site_test
+  database: programmers_day_test
   username: postgres
   password:
   host: /var/run/postgresql
 
 staging:
   <<: *setup
-  database: live_site_staging
-  username: live_site_staging
-  password:
+  database: programmers_day_staging
+  username: programmers_day_staging
+  password: xhwbX3QOWjFf8djQThIBi
 
 production:
   <<: *setup
-  database: live_site_production
-  username: live_site_production
+  database: programmers_day_production
+  username: programmers_day_production
   password:
