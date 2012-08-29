@@ -1,0 +1,8 @@
+en:
+  web:
+    admin:
+      users:
+        index:
+          users: "Users"
+          new: "New user"
+          delete_confirm: "Are u sure?"

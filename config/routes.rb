@@ -7,6 +7,8 @@ ProgrammersDay::Application.routes.draw do
 
     namespace :admin do
       root to: 'welcome#show'
+
+      resources :users
     end
   end
 

@@ -2,37 +2,15 @@
 .container.nav-collapse
   - if signed_in?
     %ul.nav
-      %li= link_to t('.releases'), releases_path
-      %li= link_to t('.movies'), movies_path
-      %li= link_to t('.persons'), persons_path
-
-      - if can?('admin_properties')
-        %li.dropdown
-          %a.dropdown-toggle{data: { toggle: 'dropdown' }, href: '#'}
-            = t('.properties')
-            %b.caret
-          %ul.dropdown-menu
-            %li= link_to t('.genres'), admin_properties_genres_path
-            %li= link_to t('.languages'), admin_properties_languages_path
-            %li= link_to t('.countries'), admin_properties_countries_path
-            %li= link_to t('.age_restrictions'), admin_properties_age_restrictions_path
-            %li= link_to t('.amplua'), admin_properties_amplua_index_path
-            %li= link_to t('.genders'), admin_properties_genders_path
-
-      - if can?('admin_settings')
-        %li.dropdown
-          %a.dropdown-toggle{data: { toggle: 'dropdown' }, href: '#'}
-            = t('.settings')
-            %b.caret
-          %ul.dropdown-menu
-            %li= link_to t('.locales'), admin_settings_locales_path
-            %li= link_to t('.users'), admin_settings_users_path
+      %li= link_to t('.users'), admin_users_path
+      %li= link_to t('.news'), '#'
+      %li= link_to t('.settings'), '#'
 
     .btn-group.pull-right
-      = link_to t('.sign_out'), session_path, method: :delete, class: 'btn btn-inverse'
+      = link_to t('.sign_out'), session_path, method: :delete, class: 'btn'
     %ul.nav.pull-right
       %li
-        = link_to edit_profile_path do
+        = link_to edit_admin_user_path(current_user) do
           %i.icon-user
           = current_user
   - else

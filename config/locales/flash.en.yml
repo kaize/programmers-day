@@ -1,0 +1,6 @@
+en:
+  flash:
+    controllers:
+      sessions:
+        create:
+          error: "Bad email or password"

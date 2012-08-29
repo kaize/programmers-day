@@ -1,0 +1,7 @@
+ru:
+  flash:
+    controllers:
+      web:
+        sessions:
+          create:
+            error: "Неверный адрес электронной почты или пароль"

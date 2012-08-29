@@ -1,0 +1,18 @@
+= simple_form_for @user, url: url do |f|
+  .row
+    .span6
+      = f.input :first_name
+      = f.input :last_name
+      = f.input :email
+      = f.input :password
+    .span6
+      = f.input :company
+      = f.input :university
+      = f.input :course
+      = f.input :phone
+  .form-actions
+    = f.button :submit, class: 'btn btn-primary'
+    = link_to t('.cancel'), admin_users_path, class: 'btn'
+    - if @user.persisted?
+      = link_to t('.delete'), admin_user_path(@user), method: :delete, class: 'btn btn-danger pull-right',
+        data: { confirm: t('.delete_confirm') }

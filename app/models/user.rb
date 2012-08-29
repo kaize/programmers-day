@@ -1,8 +1,35 @@
 class User < ActiveRecord::Base
-  attr_accessible :email, :name, :password_digest
+  include UserRepository
+
+  attr_accessible :email, :first_name, :last_name, :password_digest, :state, :state_event,
+    :university, :course, :company, :phone
 
   has_secure_password
 
   validates :email, presence: true, email: true, uniqueness: { case_sensitive: false }
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+
+  state_machine initial: :new do
+    state :new
+    state :active
+    state :deleted
+
+    event :activate do
+      transition all - [:active] => :active
+    end
+
+    event :deleting do
+      transition all - [:deleted] => :deleted
+    end
+  end
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
+
+  def to_s
+    full_name
+  end
 
 end

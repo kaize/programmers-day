@@ -1,0 +1,8 @@
+ru:
+  web:
+    admin:
+      users:
+        index:
+          users: "Пользователи"
+          new: "Добавить пользователя"
+          delete_confirm: "Точно удалить пользователя?"
