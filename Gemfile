@@ -29,6 +29,7 @@ group :assets do
 end
 
 group :development do
+  gem 'capi'
   gem 'capistrano'
   gem 'capistrano_colors'
   gem 'capistrano-ext'

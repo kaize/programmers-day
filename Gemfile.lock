@@ -44,6 +44,8 @@ GEM
       thor (~> 0.15.4)
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
+    capi (0.1.1)
+      capistrano
     capistrano (2.13.3)
       highline
       net-scp (>= 1.0.0)
@@ -208,6 +210,7 @@ DEPENDENCIES
   airbrake
   backup (~> 3.0.25)
   bcrypt-ruby (~> 3.0.0)
+  capi
   capistrano
   capistrano-ext
   capistrano_colors
