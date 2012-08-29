@@ -1,7 +1,17 @@
 FactoryGirl.define do
   factory :user do
     email { generate :email }
-    password_digest { generate :string }
-    name { generate :string }
+    password { generate :string }
+    first_name { generate :string }
+    last_name { generate :string }
   end
+
+  factory :active_user, parent: :user do
+    state_event 'activate'
+  end
+
+  factory :admin, parent: :user do
+    admin true
+  end
+
 end

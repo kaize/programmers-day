@@ -13,6 +13,6 @@
   .form-actions
     = f.button :submit, class: 'btn btn-primary'
     = link_to t('.cancel'), admin_users_path, class: 'btn'
-    - if @user.persisted?
+    - if can_delete_user?(@user)
       = link_to t('.delete'), admin_user_path(@user), method: :delete, class: 'btn btn-danger pull-right',
         data: { confirm: t('.delete_confirm') }

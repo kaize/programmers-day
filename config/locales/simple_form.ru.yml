@@ -5,4 +5,11 @@ ru:
         name: "Имя"
         password: "Пароль"
         email: "Адрес электронной почты"
+        phone: "Номер телефона"
+      user:
+        first_name: "Имя"
+        last_name: "Фамилия"
+        company: "Компания"
+        university: "Университет"
+        course: "Курс"
 

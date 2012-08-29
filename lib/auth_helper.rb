@@ -16,6 +16,10 @@ module AuthHelper
     @current_user ||= (session[:user_id] && User.find_by_id(session[:user_id]))
   end
 
+  def current_user?(user)
+    user == current_user
+  end
+
   def authenticate_admin!
     unless current_user
       redirect_to new_session_path

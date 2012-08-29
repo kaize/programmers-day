@@ -6,3 +6,22 @@ ru:
           users: "Пользователи"
           new: "Добавить пользователя"
           delete_confirm: "Точно удалить пользователя?"
+        edit:
+          user_edit: "Редактирование пользователя"
+        new:
+          new_user: "Добавление пользователя"
+        form:
+          cancel: "Отменить"
+          delete: "Удалить пользователя"
+          delete_confirm: "Точно удалить пользователя?"
+  layouts:
+    web:
+      admin:
+        shared:
+          nav:
+            programmers_day: "ProgrammersDay Admin"
+            users: "Пользователи"
+            news: "Новости"
+            settings: "Настройки"
+            sign_out: "Выйти"
+
