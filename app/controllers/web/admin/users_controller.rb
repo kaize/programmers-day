@@ -36,9 +36,10 @@ class Web::Admin::UsersController < Web::Admin::ApplicationController
 
   def destroy
     @user = User.find(params[:id])
-    @user.suspend
+    @user.destroy
+
     flash_success
-    redirect_to admin_settings_users_path
+    redirect_to admin_users_path
   end
 
 end

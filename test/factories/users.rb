@@ -10,7 +10,7 @@ FactoryGirl.define do
     state_event 'activate'
   end
 
-  factory :admin, parent: :user do
+  factory :admin, parent: :active_user do
     admin true
   end
 
