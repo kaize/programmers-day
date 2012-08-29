@@ -1,0 +1,10 @@
+ru:
+  activerecord:
+    attributes:
+      user:
+        name: "Имя"
+        email: "Адрес эл. почты"
+        phone: "Номер телефона"
+        company: "Компания"
+        university: "Университет"
+        course: "Курс"

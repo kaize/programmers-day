@@ -1,5 +1,5 @@
 .page-header
-  = link_to new_admin_user_path, class: 'btn btn-success pull-right' do
+  -#= link_to new_admin_user_path, class: 'btn btn-success pull-right' do
     %i.icon-plus
     = t('.new')
   %h1
@@ -10,17 +10,22 @@
     %tr
       %th= sort_link @q, :name
       %th= sort_link @q, :email
+      %th= sort_link @q, :phone
       %th= sort_link @q, :company
-      %th
+      %th= sort_link @q, :university
+      %th= sort_link @q, :course
 
   %tbody
   - @users.each do |user|
     %tr
-      %td
-        = link_to user, edit_admin_user_path(user)
+      %td= user
+      -#  = link_to user, edit_admin_user_path(user)
       %td= user.email
+      %td= user.phone
       %td= user.company
-      %td
+      %td= user.university
+      %td= user.course
+      -#%td
         .pull-right
           = link_to edit_admin_user_path(user), class: 'btn btn-mini btn-primary' do
             %i.icon-pencil
