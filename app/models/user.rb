@@ -1,10 +1,9 @@
 class User < ActiveRecord::Base
   include UserRepository
 
-  attr_accessible :email, :first_name, :last_name, :password, :state, :state_event,
-    :university, :course, :company, :phone, :admin
+  attr_accessible :email, :first_name, :last_name, :university, :course, :company, :phone, :admin
 
-  has_secure_password
+  #has_secure_password
 
   validates :email, presence: true, email: true, uniqueness: { case_sensitive: false }
   validates :first_name, presence: true
