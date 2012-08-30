@@ -1,12 +1,12 @@
 class Web::MembersController < Web::ApplicationController
   def new
-    @user = User.new
+    @member = User.new
   end
 
   def create
-    @user = User.new(params[:user])
+    @member = User.new(params[:user])
 
-    if @user.save
+    if @member.save
       flash_success
       redirect_to new_member_path
     else

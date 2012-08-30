@@ -12,3 +12,9 @@ ru:
         name: "Заголовок"
         uri: "URI"
         body: "Содержание"
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              email: "некорректное значение"

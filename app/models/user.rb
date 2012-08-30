@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   include UserRepository
 
-  attr_accessible :email, :first_name, :last_name, :university, :course, :company, :phone, :admin
+  attr_accessible :email, :first_name, :last_name, :university, :course, :company, :phone
 
   #has_secure_password
 
