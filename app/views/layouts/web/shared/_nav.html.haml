@@ -1,9 +1,8 @@
-= link_to t('.programmers_day'), root_path, class: :brand
 .container.nav-collapse
   %ul.nav
-    %li= link_to t('.news'), '#'
-    %li= link_to t('.info'), '#'
-    %li= link_to t('.registration'), '#'
-    %li= link_to t('.questions'), '#'
-    %li= link_to t('.about'), '#'
+    -#%li= link_to t('.news'), '#'
+    %li= link_to t('.info'), root_path
+    %li= link_to t('.registration'), new_member_path
+    %li= link_to t('.questions'), page_path(:feedback)
+    %li= link_to t('.organizators'), page_path(:org)
 

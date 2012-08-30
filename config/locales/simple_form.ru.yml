@@ -6,6 +6,8 @@ ru:
         password: "Пароль"
         email: "Адрес электронной почты"
         phone: "Номер телефона"
+      page:
+        name: "Заголовок"
       user:
         first_name: "Имя"
         last_name: "Фамилия"

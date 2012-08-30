@@ -1,10 +1,23 @@
 ru:
   web:
     admin:
+      pages:
+        index:
+          pages: "Страницы сайта"
+          new: "Добавить страницу"
+          delete_confirm: "Точно удалить страницу"
+        edit:
+          page_edit: "Редактирование страницы"
+        new:
+          new_page: "Добавление страницу"
+        form:
+          cancel: "Отменить"
+          delete: "Удалить страницу"
+          delete_confirm: "Точно удалить страницу"
       users:
         index:
-          users: "Пользователи"
-          new: "Добавить пользователя"
+          users: "Участники"
+          new: "Добавить"
           delete_confirm: "Точно удалить пользователя?"
         edit:
           user_edit: "Редактирование пользователя"
@@ -20,8 +33,8 @@ ru:
         shared:
           nav:
             programmers_day: "ProgrammersDay Admin"
-            users: "Пользователи"
+            users: "Участники"
             news: "Новости"
-            settings: "Настройки"
+            pages: "Страницы"
             sign_out: "Выйти"
 

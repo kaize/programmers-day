@@ -1,0 +1,8 @@
+= simple_form_for @page, url: url do |f|
+  - if @page.new_record?
+    = f.input :uri
+  = f.input :name, input_html: { class: 'span5' }
+  = f.input :body, as: :ckeditor, input_html: { width: "800", height: "500", tollbar: :easy }
+  .form-actions
+    = f.button :submit, class: 'btn btn-primary'
+    = link_to t('.cancel'), admin_pages_path, class: 'btn'

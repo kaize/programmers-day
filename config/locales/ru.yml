@@ -1,7 +1,21 @@
 ru:
+  layouts:
+    web:
+      shared:
+        nav:
+          programmers_day: ""
+          registration: "Хочу пойти"
+          news: "Наши новости"
+          info: "Информация и программа"
+          questions: "Возник вопрос"
+          organizators: "Организаторы и партнёры"
   web:
     sessions:
       new:
         sign_in: "Вход"
         submit: "Войти"
-
+    members:
+      new:
+        registration: "Регистрация"
+      form:
+        register: "Я иду!"

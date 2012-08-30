@@ -1,0 +1,32 @@
+.page-header
+  = link_to new_admin_page_path, class: 'btn btn-success pull-right' do
+    %i.icon-plus
+    = t('.new')
+  %h1
+    = t('.pages')
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th= sort_link @q, :name
+      %th= sort_link @q, :uri
+      %th
+
+  %tbody
+  - @pages.each do |page|
+    %tr
+      %td
+        = link_to page, page_path(page), target: :_blank
+      %td= page.uri
+      %td
+        .pull-right
+          = link_to edit_admin_page_path(page.id), class: 'btn btn-mini btn-primary' do
+            %i.icon-pencil
+          &nbsp;
+          -#= link_to admin_page_path(page), data: { confirm: t('.delete_confirm') }, method: :delete,
+            class: 'btn btn-mini btn-danger' do
+            %i.icon-trash
+
+.pagination.pull-right
+  = paginate @pages
+

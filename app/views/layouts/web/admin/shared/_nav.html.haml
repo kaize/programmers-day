@@ -2,9 +2,9 @@
 .container.nav-collapse
   - if signed_in?
     %ul.nav
+      %li= link_to t('.pages'), admin_root_path
       %li= link_to t('.users'), admin_users_path
       %li= link_to t('.news'), '#'
-      %li= link_to t('.settings'), '#'
 
     .btn-group.pull-right
       = link_to t('.sign_out'), session_path, method: :delete, class: 'btn'

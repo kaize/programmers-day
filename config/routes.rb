@@ -3,12 +3,14 @@ ProgrammersDay::Application.routes.draw do
     root to: 'welcome#show'
 
     resource :session
-    resources :users
+    resources :members, only: [:new, :create]
+    resources :pages, only: [:show]
 
     namespace :admin do
-      root to: 'welcome#show'
+      root to: 'pages#index'
 
       resources :users
+      resources :pages
     end
   end
 

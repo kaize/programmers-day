@@ -8,3 +8,7 @@ ru:
         company: "Компания"
         university: "Университет"
         course: "Курс"
+      page:
+        name: "Заголовок"
+        uri: "URI"
+        body: "Содержание"
