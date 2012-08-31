@@ -4,6 +4,7 @@ FactoryGirl.define do
     #password { generate :string }
     first_name { generate :string }
     last_name { generate :string }
+    phone { generate :phone }
   end
 
   factory :active_user, parent: :user do
