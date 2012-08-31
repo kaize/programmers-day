@@ -12,6 +12,9 @@ ru:
           organizators: "Организаторы и партнёры"
       application:
         partners: "Организаторы и партнёры"
+  member_mailer:
+    welcome:
+      subject: "Вы зарегистрирования на День программиста"
   web:
     sessions:
       new:

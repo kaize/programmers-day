@@ -4,9 +4,14 @@ Configus.build Rails.env do
       username 'admin'
       password 'Ls4l8g8shXCODu2Fst'
     end
+
+    mailer do
+      default_url 'prog73.ru'
+      default_from 'noreply@prog73.ru'
+    end
   end
 
-  env :development do
+  env :development, parent: :production do
     basic_auth do
       username 'admin'
       password '1234'
