@@ -11,3 +11,7 @@
  *= require_self
  *= require_tree .
  */
+
+table.social td.fb_like {
+  padding-right: 33px;
+}

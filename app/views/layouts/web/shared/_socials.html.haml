@@ -1,0 +1,8 @@
+.row
+  .span6
+    %table.social
+      %tbody
+        %tr
+          - [:vk_like, :fb_like, :gplus, :tweet].each do |widget|
+            %td{class: widget}
+              = render "layouts/web/shared/social/#{widget}"

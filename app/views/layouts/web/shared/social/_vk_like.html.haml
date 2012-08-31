@@ -1,0 +1,13 @@
+= javascript_include_tag "http://userapi.com/js/api/openapi.js?17"
+#vk_like
+:javascript
+  VK.init({apiId: 3104805, onlyWidgets: true});
+  VK.Widgets.Like("vk_like", {
+    type: "mini",
+    width: 120,
+    height: 20,
+    verb: 0,
+    pageUrl: "#{url_for(only_path: false)}",
+    pageDescription: "..."
+  });
+
