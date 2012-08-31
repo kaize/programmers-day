@@ -40,16 +40,19 @@
               = yield :sidebar
         - else
           = yield
-      %footer
-        - if current_page?(root_url)
-          .page-header
-            %h2= t('.partners')
-        - else
-          %p
-            %br
-        = render 'layouts/web/shared/partners'
+      - if current_page?(root_url)
+        .page-header
+          %h2= t('.partners')
+      - else
+        %p
+          %br
+      = render 'layouts/web/shared/partners'
+    %footer
+      .container
         %p &nbsp;
         = render 'layouts/web/shared/social'
         %p &nbsp;
-        %p &copy; 2012
+        %p
+          &copy; 2012
+          = t('.copyright')
     = javascript_include_tag "application"

@@ -9,8 +9,8 @@ set :branch do
   raise "Use tag. (Example: TAG=v2)" unless ENV['TAG']
   ENV['TAG']
 end
-set :deploy_to, "/u/apps/programmers_day_production"
+set :deploy_to, "/u/apps/programmers-day"
 set :keep_releases, 15
 
-set :whenever_command, "bundle exec whenever"
-require "whenever/capistrano"
+#set :whenever_command, "bundle exec whenever"
+#require "whenever/capistrano"

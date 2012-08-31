@@ -12,6 +12,7 @@ ru:
           organizators: "Организаторы и партнёры"
       application:
         partners: "Организаторы и партнёры"
+        copyright: "НП «Содействие развитию ИТ»"
   member_mailer:
     welcome:
       subject: "Вы зарегистрирования на День программиста"
