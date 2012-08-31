@@ -41,8 +41,15 @@
         - else
           = yield
       %footer
+        - if current_page?(root_url)
+          .page-header
+            %h2= t('.partners')
+        - else
+          %p
+            %hr
+        = render 'layouts/web/shared/partners'
         %p &nbsp;
-        = render 'layouts/web/shared/socials'
+        = render 'layouts/web/shared/social'
         %p &nbsp;
         %p &copy; 2012
     = javascript_include_tag "application"

@@ -10,6 +10,8 @@ ru:
           info: "Информация и программа"
           questions: "Возник вопрос"
           organizators: "Организаторы и партнёры"
+      application:
+        partners: "Организаторы и партнёры"
   web:
     sessions:
       new:

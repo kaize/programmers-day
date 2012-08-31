@@ -3,6 +3,7 @@ ru:
     attributes:
       user:
         name: "Имя"
+        age: "Возраст"
         email: "Адрес эл. почты"
         phone: "Номер телефона"
         company: "Компания"

@@ -11,4 +11,8 @@ module ApplicationHelper
     item(tag, page, path, link_options)
   end
 
+  def organizators_and_partners
+    @organizators_and_partners ||= Page.find_by_uri('org')
+  end
+
 end
