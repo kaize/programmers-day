@@ -7,6 +7,7 @@ class Web::MembersController < Web::ApplicationController
     @member = User.new(params[:user])
 
     if @member.save
+      MemberMailer.welcome(@member).deliver
       flash_success
       redirect_to new_member_path
     else
