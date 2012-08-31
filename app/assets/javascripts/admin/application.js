@@ -11,8 +11,16 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery.ui.all
+//= require jquery.ui.datepicker-ru
 //= require twitter/bootstrap
 //= require bootstrap
 //= require ckeditor/init
 //= require_self
+$(function() {
+    $.datepicker.setDefaults($.datepicker.regional['ru']);
 
+    $('input.datepicker').datepicker({
+        dateFormat: "yy-mm-dd",
+    });
+});

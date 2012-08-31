@@ -1,6 +1,19 @@
 ru:
   web:
     admin:
+      news:
+        index:
+          news: "Новости"
+          new: "Добавить"
+          delete_confirm: "Точно удалить новость?"
+        edit:
+          news_edit: "Редактирование новости"
+        new:
+          new_news: "Добавление новости"
+        form:
+          cancel: "Отменить"
+          delete: "Удалить новость"
+          delete_confirm: "Точно удалить новость?"
       pages:
         index:
           pages: "Страницы сайта"

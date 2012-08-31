@@ -8,12 +8,14 @@ ProgrammersDay::Application.routes.draw do
     resource :session
     resources :members, only: [:new, :create]
     resources :pages, only: [:show]
+    resources :news, only: [:index]
 
     namespace :admin do
       root to: 'pages#index'
 
       resources :users
       resources :pages
+      resources :news
     end
   end
 

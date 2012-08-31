@@ -15,13 +15,19 @@ ru:
   member_mailer:
     welcome:
       subject: "Вы зарегистрирования на День программиста"
+  time:
+    formats:
+      day_dot_month_dot_year: "%d.%m.%Y"
   web:
-    sessions:
-      new:
-        sign_in: "Вход"
-        submit: "Войти"
     members:
       new:
         registration: "Регистрация"
       form:
         register: "Я иду!"
+    news:
+      index:
+        news: "Новости"
+    sessions:
+      new:
+        sign_in: "Вход"
+        submit: "Войти"

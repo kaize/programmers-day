@@ -1,6 +1,9 @@
 ru:
   helpers:
     submit:
+      news:
+        create: "Сохранить"
+        update: "Сохранить"
       page:
         create: "Сохранить"
         update: "Сохранить"

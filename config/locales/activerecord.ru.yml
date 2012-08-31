@@ -1,6 +1,17 @@
 ru:
   activerecord:
     attributes:
+      news:
+        name: "Название"
+        published_at: "Дата публикации"
+        state: "Состояние"
+        image: "Картинка"
+        body: "Содержание"
+        state_event: "Изменить состояние"
+      page:
+        name: "Заголовок"
+        uri: "URI"
+        body: "Содержание"
       user:
         name: "Имя"
         age: "Возраст"
@@ -9,13 +20,17 @@ ru:
         company: "Компания"
         university: "Университет"
         course: "Курс"
-      page:
-        name: "Заголовок"
-        uri: "URI"
-        body: "Содержание"
     errors:
       models:
         user:
           attributes:
             email:
               email: "некорректное значение"
+    state_machines:
+      states:
+        new: "Новая"
+        published: "Опубликована"
+        hidden: "Скрыта"
+      events:
+        publish: "Опубликовать"
+        unpublish: "Скрыть"

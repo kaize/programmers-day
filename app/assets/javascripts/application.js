@@ -12,5 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.jcarousel.min
 //= require twitter/bootstrap
-//= require_tree .
+
+$(function() {
+    $('#carousel').jcarousel({
+		scroll: 1
+    });
+});
+

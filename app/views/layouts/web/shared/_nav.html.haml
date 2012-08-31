@@ -1,6 +1,6 @@
 .container.nav-collapse
   %ul.nav
-    -#%li= link_to t('.news'), '#'
+    %li= link_to t('.news'), news_index_path
     %li= link_to t('.info'), root_path
     %li= link_to t('.registration'), new_member_path
     %li= link_to t('.questions'), page_path(:feedback)

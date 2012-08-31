@@ -1,0 +1,13 @@
+= simple_form_for @news, url: url do |f|
+  .row
+    .span6
+      = f.input :name, input_html: { class: 'span5' }
+      = f.input :published_at, as: :datepicker
+      = f.input :state_event, as: :state_event
+    .span3.offset2
+      = f.input :image, as: :image_preview
+  %p
+    = f.input :body, as: :ckeditor, input_html: { toolbar: 'Easy' }
+  .form-actions
+    = f.button :submit, class: 'btn btn-primary'
+    = link_to t('.cancel'), admin_news_index_path, class: 'btn'

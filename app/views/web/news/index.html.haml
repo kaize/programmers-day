@@ -1,0 +1,44 @@
+- title t('.news')
+
+.page-header
+  %h1= t('.news')
+.row
+  .news.span8
+    %ul#carousel.jcarousel-skin-tango
+      - @news.each do |news|
+        %li.span3
+          %p= image_tag news.image
+          %p.muted= l news.published_at, format: :day_dot_month_dot_year
+          %p!= news.body
+  .span3.offset1
+    = javascript_include_tag 'http://widgets.twimg.com/j/2/widget.js'
+    :javascript
+      new TWTR.Widget({
+
+        version: 2,
+        type: 'search',
+        search: 'deadlinecamp',
+        interval: 30000,
+        title: '#Deadlinecamp',
+        subject: 'Новости из Twitter',
+        width: 270,
+        height: 500,
+        theme: {
+          shell: {
+            background: '#ffffff',
+            color: '#333333'
+          },
+          tweets: {
+            background: '#f5f5f5',
+            color: '#555555',
+            links: '#0088cc'
+          }
+        },
+        features: {
+          scrollbar: true,
+          loop: true,
+          live: true,
+          behavior: 'default'
+        }
+      }).render().start();
+
