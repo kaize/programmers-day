@@ -4,7 +4,7 @@ ru:
       news:
         index:
           news: "Новости"
-          new: "Добавить"
+          new: "Добавить новость"
           delete_confirm: "Точно удалить новость?"
         edit:
           news_edit: "Редактирование новости"
@@ -45,7 +45,7 @@ ru:
       admin:
         shared:
           nav:
-            programmers_day: "ProgrammersDay Admin"
+            programmers_day: "ProgrammersDay"
             users: "Участники"
             news: "Новости"
             pages: "Страницы"

@@ -2,7 +2,7 @@ ru:
   activerecord:
     attributes:
       news:
-        name: "Название"
+        name: "Заголовок"
         published_at: "Дата публикации"
         state: "Состояние"
         image: "Картинка"

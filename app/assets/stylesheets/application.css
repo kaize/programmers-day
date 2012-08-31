@@ -27,11 +27,11 @@ table.partners td {
     text-align: center;
 }
 
-table.social td.vk_like {
+.social table td.vk_like {
   padding-right: 7px;
 }
 
-table.social td.fb_like {
+.social table td.fb_like {
   padding-right: 33px;
 }
 
@@ -39,6 +39,7 @@ div.news {
 }
 
 footer {
+  text-align: center;
   background: #292727;
   color: #fff;
 }
