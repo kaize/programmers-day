@@ -1,6 +1,8 @@
 ru:
   activerecord:
     attributes:
+      course:
+        name: "Курс"
       news:
         name: "Заголовок"
         published_at: "Дата публикации"
@@ -20,6 +22,9 @@ ru:
         company: "Компания"
         university: "Университет"
         course: "Курс"
+        excursio: "Экскурсия"
+        subscribe: "Подписка"
+        process_personal_data: "ОПД"
     errors:
       models:
         user:
