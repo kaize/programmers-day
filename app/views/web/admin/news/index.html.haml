@@ -23,7 +23,7 @@
           = link_to edit_admin_news_path(news), class: 'btn btn-mini btn-primary' do
             %i.icon-pencil
           &nbsp;
-          = link_to admin_news_path(news), data: { confirm: t('.delete_confirm') }, method: :delete,
+          = link_to admin_news_path(news), method: :delete, data: { confirm: t('.delete_confirm') },
             class: 'btn btn-mini btn-danger' do
             %i.icon-trash
 

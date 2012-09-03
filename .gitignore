@@ -23,7 +23,7 @@
 /config/database.yml
 /config/database.yml.dev
 /db/schema.rb
-/public/uploads
+/public/system
 /.idea
 /doc
 .yardoc
