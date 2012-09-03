@@ -10,5 +10,5 @@
           %p= image_tag news.image
           %p.muted= l news.published_at, format: :day_dot_month_dot_year
           %p!= news.body
-  .span3.offset1
+  .span4
     = render 'twitter'

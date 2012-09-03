@@ -33,9 +33,9 @@
       %td= user.excursio
       %td= user.subscribe
       %td= user.process_personal_data
-      -#%td
+      %td
         .pull-right
-          = link_to edit_admin_user_path(user), class: 'btn btn-mini btn-primary' do
+          -#= link_to edit_admin_user_path(user), class: 'btn btn-mini btn-primary' do
             %i.icon-pencil
           &nbsp;
           = link_to admin_user_path(user), data: { confirm: t('.delete_confirm') }, method: :delete,
