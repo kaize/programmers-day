@@ -5,6 +5,7 @@ FactoryGirl.define do
     first_name { generate :string }
     last_name { generate :string }
     phone { generate :phone }
+    course
   end
 
   factory :active_user, parent: :user do
