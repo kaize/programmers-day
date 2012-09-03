@@ -58,7 +58,6 @@ GEM
     carrierwave (0.6.2)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
-    chronic (0.6.7)
     ci_reporter (1.7.1)
       builder (>= 2.1.2)
     ckeditor (3.7.2)
@@ -207,11 +206,6 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    validates (0.0.3)
-      activemodel (>= 3.0.0)
-    whenever (0.7.3)
-      activesupport (>= 2.3.4)
-      chronic (~> 0.6.3)
 
 PLATFORMS
   ruby
@@ -252,5 +246,3 @@ DEPENDENCIES
   uglifier (>= 1.0.3)
   unicorn
   usefull_scopes!
-  validates
-  whenever
