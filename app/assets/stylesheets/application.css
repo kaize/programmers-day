@@ -17,14 +17,12 @@ html {
   background: #292727;
 }
 
-table.partners {
-    margin-top: 30px;
-    width: 100%;
+.landing-bottom {
+  margin-bottom: 50px;
 }
 
-table.partners td {
-    vertical-align: middle;
-    text-align: center;
+.span4.landing-top {
+  padding-top: 15px;
 }
 
 .social table td.vk_like {
