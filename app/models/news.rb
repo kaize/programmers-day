@@ -16,7 +16,7 @@ class News < ActiveRecord::Base
     state :hidden
 
     event :publish do
-      transition new: :published
+      transition any - [:published] => :published
     end
 
     event :unpublish do

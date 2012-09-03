@@ -1,14 +1,19 @@
 = simple_form_for @member, url: url do |f|
   .row
-    .span6
+    .span4
       = f.input :first_name
       = f.input :last_name
       = f.input :email
       = f.input :phone
-    .span6
+    .span4
       = f.input :age
       = f.input :company
       = f.input :university
       = f.input :course
+  .row
+    .span12
+      = f.input :excursio, label: false, inline_label: t('.excursio')
+      = f.input :process_personal_data, label: false, inline_label: t('.process_personal_data')
+      = f.input :subscribe, label: false, inline_label: t('.subscribe')
   .form-actions
     = f.button :submit, t('.register'), class: 'btn btn-primary btn-large span2'
