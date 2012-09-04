@@ -1,6 +1,6 @@
 class Web::MembersController < Web::ApplicationController
   def new
-    @member = User.new
+    @member = User.new process_personal_data: true, subscribe: true
   end
 
   def create

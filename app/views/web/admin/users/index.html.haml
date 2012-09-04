@@ -8,6 +8,7 @@
 %table.table.table-striped
   %thead
     %tr
+      %th= sort_link @q, :id
       %th= sort_link @q, :name
       %th= sort_link @q, :email
       %th= sort_link @q, :phone
@@ -22,6 +23,7 @@
   %tbody
   - @users.each do |user|
     %tr
+      %td= user.id
       %td= user
       -#  = link_to user, edit_admin_user_path(user)
       %td= user.email
