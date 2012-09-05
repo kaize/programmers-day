@@ -17,6 +17,32 @@
   height: 82px;
 }
 
+.alert {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.alert .close {
+  float: right;
+  margin: 0 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.alert-success {
+  background: #DFF0D8;
+  color: #468847;
+}
+
+.alert-error {
+  background: #F2DEDE;
+  color: #B94A48;
+}
+
 .social table {
   margin: 0 auto;
 }

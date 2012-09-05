@@ -9,7 +9,7 @@ class Web::MembersController < Web::ApplicationController
     if @member.save
       MemberMailer.welcome(@member).deliver
       flash_success
-      redirect_to new_member_path
+      redirect_to root_path
     else
       flash_error
       render :new

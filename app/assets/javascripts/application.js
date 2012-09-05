@@ -17,10 +17,15 @@
 // =  require myriad_pro_400.font.js
 
 $(function() {
+
+    $('.alert .close').click(function() {
+        $(this).parent().hide();
+        return false;
+    });
+
     $('#mycarousel').jcarousel({
 		scroll: 1
     });
-
 
     function toSt(n) {
         var s = ""
