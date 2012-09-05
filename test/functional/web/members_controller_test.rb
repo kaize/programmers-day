@@ -16,4 +16,10 @@ class Web::MembersControllerTest < ActionController::TestCase
     assert User.find_by_email(@attrs[:email])
   end
 
+  test "should not create member" do
+    post :create, user: @attrs
+    assert_response :success
+    assert_nil User.find_by_email(@attrs[:email])
+  end
+
 end
