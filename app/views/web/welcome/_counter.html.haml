@@ -1,0 +1,23 @@
+.time
+  %p
+    = image_tag 'day_party.png'
+  %ul
+    %li.bl
+      = image_tag 'time_l.png'
+    %li.bc
+      %form.clock
+        %p
+          %input.item1{name: :days, size: 2}
+          %span.t= image_tag 't1.png'
+          %span.lin= image_tag 'lin1.gif'
+        %p
+          %input.item2{name: :hours, size: 2}
+          %span.t= image_tag 't2.png'
+          %span.lin= image_tag 'lin2.gif'
+        %p
+          %input.item3{name: :mins, size: 2}
+          %span.t= image_tag 't3.png', class: 't3'
+          %span.lin= image_tag 'lin3.gif'
+
+    %li.br
+      = image_tag 'time_r.png'

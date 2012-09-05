@@ -20,7 +20,7 @@ gem 'state_machine'
 gem 'twitter-bootstrap-rails'
 gem 'unicorn'
 gem 'usefull_scopes', git: 'https://github.com/kaize/usefull_scopes.git'
-#gem 'validates'
+gem 'validates'
 #gem 'whenever'
 
 group :assets do

@@ -8,21 +8,17 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require bootstrap_and_overrides
- *= require jcarousel-skin
+ *= require style
+ *= require skin
  *= require_self
  */
 
-html {
-  background: #292727;
+.header.min-height {
+  height: 82px;
 }
 
-.landing-bottom {
-  margin-bottom: 50px;
-}
-
-.span4.landing-top {
-  padding-top: 15px;
+.social table {
+  margin: 0 auto;
 }
 
 .social table td.vk_like {
@@ -33,11 +29,16 @@ html {
   padding-right: 33px;
 }
 
-div.news {
+input::-webkit-input-placeholder {
+  color: #706f6f;
+}
+input:-moz-placeholder {
+  color: #706f6f;
+}
+input:-ms-input-placeholder {
+  color: #706f6f;
 }
 
-footer {
-  text-align: center;
-  background: #292727;
-  color: #fff;
+.error .help-inline {
+  color: red;
 }

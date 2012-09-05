@@ -13,4 +13,14 @@ ru:
         company: "Компания"
         university: "Университет"
         course: "Курс"
+    placeholders:
+      user:
+        first_name: "Имя *"
+        age: "Возраст"
+        last_name: "Фамилия *"
+        company: "Компания"
+        email: "Электронная почта *"
+        phone: "Номер телефона *"
+        university: "ВУЗ"
+        course: "Курс"
 

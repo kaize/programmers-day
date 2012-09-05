@@ -1,5 +1,12 @@
-.page-header
-  %h1= t('.registration')
+- content_for :header do
+  .header.min-height
+    .bg_l
+    .bg_r
+    .logo
+      %p
+        = image_tag 'logo.png'
 
-= render 'form', url: members_path
+#page3
+  .cent
+    = render 'form', url: members_path
 

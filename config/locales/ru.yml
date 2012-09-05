@@ -5,11 +5,11 @@ ru:
       shared:
         nav:
           programmers_day: ""
-          registration: "Хочу пойти"
-          news: "Наши новости"
-          info: "Информация и программа"
-          questions: "Возник вопрос"
-          organizators: "Организаторы и партнёры"
+          news: "Наши<br>Новости"
+          info: "Информация и<br>Программа"
+          registration: "Хочу<br>Пойти!"
+          questions: "Возник<br>Вопрос?"
+          organizators: "Организаторы и<br>Партнёры"
       application:
         partners: "Организаторы и партнёры"
         copyright: "НП «Содействие развитию ИТ»"
@@ -24,11 +24,12 @@ ru:
       new:
         registration: "Регистрация"
       form:
+        required_fields: "* — поля обязательны для заполнения"
+        course: "Курс"
         register: "Я иду!"
         excursio: "Поеду на экскурсию по ИТ-компаниям"
         process_personal_data: "Даю согласие на обработку персональных данных"
         subscribe: "Интересно получать информацию о крупных ИТ-мероприятиях Ульяновска (Стачка, Улкамп и прочие)"
-
     news:
       index:
         news: "Новости"
@@ -36,3 +37,10 @@ ru:
       new:
         sign_in: "Вход"
         submit: "Войти"
+    welcome:
+      show:
+        news: "Наши<br>Новости"
+        info: "Информация и<br>Программа"
+        registration: "Хочу<br>Пойти!"
+        questions: "Возник<br>Вопрос?"
+        organizators: "Организаторы и<br>Партнёры"
