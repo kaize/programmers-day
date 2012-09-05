@@ -18,7 +18,6 @@
       %th= sort_link @q, :course_name
       %th= sort_link @q, :excursio
       %th= sort_link @q, :subscribe
-      %th= sort_link @q, :process_personal_data
 
   %tbody
   - @users.each do |user|
@@ -34,8 +33,7 @@
       %td= user.course
       %td= user.excursio
       %td= user.subscribe
-      %td= user.process_personal_data
-      %td
+      -#%td
         .pull-right
           -#= link_to edit_admin_user_path(user), class: 'btn btn-mini btn-primary' do
             %i.icon-pencil
