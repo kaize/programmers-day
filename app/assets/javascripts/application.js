@@ -34,7 +34,7 @@ $(function() {
     }
 
     var countdown = function() {
-        var eventdate = new Date("September 12, 2012 14:00:00 GMT"),
+        var eventdate = new Date("September 12, 2012 12:00:00"),
             cl = $('form.clock'),
             d = new Date()
         ;
