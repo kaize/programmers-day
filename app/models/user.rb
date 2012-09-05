@@ -12,7 +12,6 @@ class User < ActiveRecord::Base
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :phone, presence: true
-  validates :process_personal_data, acceptance: { accept: true }
 
   state_machine initial: :new do
     state :new

@@ -1,10 +1,10 @@
 class Web::MembersController < Web::ApplicationController
   def new
-    @member = User.new process_personal_data: true, subscribe: true
+    @member = UserRegistrationType.new process_personal_data: true, subscribe: true
   end
 
   def create
-    @member = User.new(params[:user])
+    @member = UserRegistrationType.new(params[:user])
 
     if @member.save
       MemberMailer.welcome(@member).deliver

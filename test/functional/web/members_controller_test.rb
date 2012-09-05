@@ -11,7 +11,7 @@ class Web::MembersControllerTest < ActionController::TestCase
   end
 
   test "should create member" do
-    post :create, user: @attrs
+    post :create, user: @attrs.merge(process_personal_data: "1")
     assert_response :redirect
     assert User.find_by_email(@attrs[:email])
   end
