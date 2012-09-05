@@ -5,6 +5,9 @@
   %h1
     = t('.users')
 
+.pagination
+  = paginate @users
+
 %table.table.table-striped
   %thead
     %tr
@@ -42,6 +45,6 @@
             class: 'btn btn-mini btn-danger' do
             %i.icon-trash
 
-.pagination.pull-right
+.pagination
   = paginate @users
 
