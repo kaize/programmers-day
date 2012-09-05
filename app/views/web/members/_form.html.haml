@@ -1,29 +1,19 @@
 = simple_form_for @member, url: url do |f|
   .fields
-    .w2
-      = f.input :first_name, label: false
-    .w2.l
-      = f.input :last_name, label: false
-    .w2
-      = f.input :email, label: false
-    .w2.l
-      = f.input :phone, label: false
-    .w2
-      = f.input :age, as: :string, label: false
-    .w2.l
-      = f.input :company, label: false
-    .w2
-      = f.input :university, label: false
-    .w2.l
-      = f.association :course, prompt: t('.course'), label: false
+    = f.input :first_name, label: false, wrapper_html: { class: 'w2' }
+    = f.input :last_name, label: false, wrapper_html: { class: 'w2 l' }
+    = f.input :email, label: false, wrapper_html: { class: 'w2' }
+    = f.input :phone, label: false, wrapper_html: { class: 'w2 l' }
+    = f.input :age, as: :string, label: false, wrapper_html: { class: 'w2' }
+    = f.input :company, label: false, wrapper_html: { class: 'w2 l' }
+    = f.input :university, label: false, wrapper_html: { class: 'w2' }
+    = f.association :course, prompt: t('.course'), label: false, wrapper_html: { class: 'w2 l' }
 
   .w3= t('.required_fields')
 
-  .w2.c
-    = f.input :excursio, label: false, inline_label: t('.excursio')
-  .w2.c
-    = f.input :process_personal_data, label: false, inline_label: t('.process_personal_data')
-  .w2.c
-    = f.input :subscribe, label: false, inline_label: t('.subscribe')
+  = f.input :excursio, label: false, inline_label: t('.excursio'), wrapper_html: { class: 'w2 c' }
+  = f.input :process_personal_data, label: false, inline_label: t('.process_personal_data'), wrapper_html: { class: 'w2 c' }
+  = f.input :subscribe, label: false, inline_label: t('.subscribe'), wrapper_html: { class: 'w2 c' }
+
   .w2.c.btn
     %input{type: :image, src: '/assets/btn_igo.png'}
