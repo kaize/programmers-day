@@ -10,11 +10,12 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-// =  require jquery
-// =  require jquery.jcarousel.min
-// =  require cufon-yui.js
-// =  require cufon.js
-// =  require myriad_pro_400.font.js
+// = require jquery
+// = require fancybox
+// = require jquery.jcarousel.min
+// = require cufon-yui.js
+// = require cufon.js
+// = require myriad_pro_400.font.js
 
 $(function() {
 
@@ -54,6 +55,22 @@ $(function() {
     }
 
     countdown();
+
+    var keypressed = [];
+
+    $(document).keydown(function(e){
+
+        if(!(e.keyCode in keypressed))
+            keypressed.push(e.keyCode);
+    });
+
+    $(document).keyup(function(e){
+
+        if (keypressed.join('') == '80827971')
+            $.fancybox.open({href: '/assets/card.jpg'});
+
+        keypressed = [];
+    });
 
 });
 
