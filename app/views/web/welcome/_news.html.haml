@@ -1,0 +1,10 @@
+.news
+  %ul#mycarousel.jcarousel-skin-tango
+    - @news.each do |news|
+      %li.span3
+        %p.image= image_tag news.image
+        %p.data= l news.published_at, format: :day_dot_month_dot_year
+        %p.text!= news.body
+.twiterr
+  = render 'web/news/twitter'
+

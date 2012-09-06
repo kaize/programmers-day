@@ -1,1 +1,39 @@
-!= @page.body
+- content_for :header do
+  .header
+    .bg_l
+    .bg_r
+    .logo
+      %p
+        = image_tag 'logo.png'
+    = render 'counter'
+= render 'layouts/web/shared/nav'
+#page1
+  .cent
+    %h2
+      %span
+        != t('.news')
+    = render 'news'
+    = render 'scroller'
+#page2
+  .cent
+    %h2
+      %span
+        != t('.info')
+    != @info.body
+#page3
+  .cent
+    %h2
+      %span
+        != t('.registration')
+    = render 'web/members/form', url: members_path
+#page4
+  .cent
+    %h2
+      %span
+        != t('.questions')
+    != @feedback.body
+#page5
+  %h2
+    %span
+      != t('.organizators')
+  = render 'layouts/web/shared/partners'

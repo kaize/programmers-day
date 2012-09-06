@@ -1,6 +1,9 @@
 class Web::WelcomeController < Web::ApplicationController
   def show
-    @page = Page.find_by_uri('info')
+    @info = Page.find_by_uri('info')
+    @feedback = Page.find_by_uri('feedback')
+    @news = News.published.by_published_at.page
+    @member = User.new process_personal_data: true, subscribe: true
   end
 
 end

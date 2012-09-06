@@ -1,20 +1,19 @@
 = simple_form_for @member, url: url do |f|
-  .row
-    .span4
-      = f.input :first_name
-      = f.input :last_name
-      = f.input :email
-      = f.input :phone
-    .span4
-      = f.input :age
-      = f.input :company
-      = f.input :university
-      = f.association :course
-  %hr
-  .row
-    .span12
-      = f.input :excursio, label: false, inline_label: t('.excursio')
-      = f.input :process_personal_data, label: false, inline_label: t('.process_personal_data')
-      = f.input :subscribe, label: false, inline_label: t('.subscribe')
-  .form-actions
-    = f.button :submit, t('.register'), class: 'btn btn-primary btn-large span2'
+  .fields
+    = f.input :first_name, label: false, wrapper_html: { class: 'w2' }
+    = f.input :last_name, label: false, wrapper_html: { class: 'w2 l' }
+    = f.input :email, label: false, wrapper_html: { class: 'w2' }
+    = f.input :phone, label: false, wrapper_html: { class: 'w2 l' }
+    = f.input :age, as: :string, label: false, wrapper_html: { class: 'w2' }
+    = f.input :company, label: false, wrapper_html: { class: 'w2 l' }
+    = f.input :university, label: false, wrapper_html: { class: 'w2' }
+    = f.association :course, prompt: t('.course'), label: false, wrapper_html: { class: 'w2 l' }
+
+  .w3= t('.required_fields')
+
+  = f.input :excursio, label: false, inline_label: t('.excursio'), wrapper_html: { class: 'w2 c' }
+  = f.input :process_personal_data, label: false, inline_label: t('.process_personal_data'), wrapper_html: { class: 'w2 c' }
+  = f.input :subscribe, label: false, inline_label: t('.subscribe'), wrapper_html: { class: 'w2 c' }
+
+  .w2.c.btn
+    %input{type: :image, src: '/assets/btn_igo.png'}

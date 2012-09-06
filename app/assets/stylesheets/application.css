@@ -8,21 +8,44 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require bootstrap_and_overrides
- *= require jcarousel-skin
+ *= require fancybox
+ *= require style
+ *= require skin
  *= require_self
  */
 
-html {
-  background: #292727;
+.header.min-height {
+  height: 82px;
 }
 
-.landing-bottom {
-  margin-bottom: 50px;
+.alert {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
-.span4.landing-top {
-  padding-top: 15px;
+.alert .close {
+  float: right;
+  margin: 0 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.alert-success {
+  background: #DFF0D8;
+  color: #468847;
+}
+
+.alert-error {
+  background: #F2DEDE;
+  color: #B94A48;
+}
+
+.social table {
+  margin: 0 auto;
 }
 
 .social table td.vk_like {
@@ -33,11 +56,26 @@ html {
   padding-right: 33px;
 }
 
-div.news {
+input::-webkit-input-placeholder {
+  color: #706f6f;
+}
+input:-moz-placeholder {
+  color: #706f6f;
+}
+input:-ms-input-placeholder {
+  color: #706f6f;
 }
 
-footer {
+.error .help-inline {
+  color: red;
+}
+
+#page5 table {
+  margin: 20px auto;
+}
+
+#page5 table td {
+  padding: 10px;
   text-align: center;
-  background: #292727;
-  color: #fff;
+  vertical-align: middle;
 }

@@ -1,8 +1,8 @@
-.social.span6.offset3
-  %table
-    %tbody
-      %tr
-        - [:vk_like, :fb_like, :gplus, :tweet].each do |widget|
-          %td{class: widget}
-            = render "layouts/web/shared/social/#{widget}"
-.clearfix
+#page6.social
+  .cent
+    %table
+      %tbody
+        %tr
+          - [:vk_like, :fb_like, :gplus, :tweet].each do |widget|
+            %td{class: widget}
+              = render "layouts/web/shared/social/#{widget}"

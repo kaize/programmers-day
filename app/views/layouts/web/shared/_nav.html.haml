@@ -1,7 +1,17 @@
-.container.nav-collapse
-  %ul.nav
-    %li= link_to t('.news'), news_index_path
-    %li= link_to t('.info'), root_path
-    %li= link_to t('.registration'), new_member_path
-    %li= link_to t('.questions'), page_path(:feedback)
-
+.menu
+  %ul
+    %li.anchor-news
+      = link_to '#page1' do
+        != t('.news')
+    %li.anchor-info
+      = link_to '#page2' do
+        != t('.info')
+    %li.anchor-want
+      = link_to '#page3' do
+        != t('.registration')
+    %li.anchor-quest
+      = link_to '#page4' do
+        != t('.questions')
+    %li.anchor-orgs
+      = link_to '#page5' do
+        != t('.organizators')

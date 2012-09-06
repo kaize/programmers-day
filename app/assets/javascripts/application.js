@@ -10,14 +10,68 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
-//= require jquery_ujs
-//= require jquery.jcarousel.min
-//= require twitter/bootstrap
+// = require jquery_javascript_library
+// = require fancybox
+// = require jquery.jcarousel.min
+// = require cufon-yui.js
+// = require cufon.js
+// = require myriad_pro_400.font.js
+// = require scrollTo
+// = require scrolling
 
 $(function() {
-    $('#carousel').jcarousel({
+
+    $('.alert .close').click(function() {
+        $(this).parent().hide();
+        return false;
+    });
+
+    $('#mycarousel').jcarousel({
 		scroll: 1
     });
+
+    function toSt(n) {
+        var s = ""
+        if(n<10) s += "0"
+        return s+n.toString();
+    }
+
+    var countdown = function() {
+        var eventdate = new Date("September 12, 2012 12:00:00"),
+            cl = $('form.clock'),
+            d = new Date()
+        ;
+        count = Math.floor((eventdate.getTime()-d.getTime())/1000);
+        if(count <= 0) {
+            cl.parents('ul').hide().parents('.header').css({height: 162});
+            return;
+        }
+
+        count = Math.floor(count/60);
+        cl.find('input[name="mins"]').val(toSt(count%60));
+        count = Math.floor(count/60);
+        cl.find('input[name="hours"]').val(toSt(count%24));
+        count = Math.floor(count/24);
+        cl.find('input[name="days"]').val(count);
+        setTimeout(countdown, 1000);
+    }
+
+    countdown();
+
+    var keypressed = [];
+
+    $(document).keydown(function(e){
+
+        if(!(e.keyCode in keypressed))
+            keypressed.push(e.keyCode);
+    });
+
+    $(document).keyup(function(e){
+        if (keypressed.sort().join('') == '71798082')
+            $.fancybox.open({href: '/assets/card.jpg'}, {autoResize: true});
+
+        keypressed = [];
+    });
+
 });
 
