@@ -67,8 +67,7 @@ $(function() {
     });
 
     $(document).keyup(function(e){
-
-        if (keypressed.join('') == '80827971')
+        if (keypressed.sort().join('') == '71798082')
             $.fancybox.open({href: '/assets/card.jpg'}, {autoResize: true});
 
         keypressed = [];
