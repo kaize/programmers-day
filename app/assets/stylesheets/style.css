@@ -19,7 +19,7 @@ ul{ list-style:none;}
 .menu {width:100%; float:left; padding:30px 0 34px 0; background:url(/assets/line.gif) repeat-x left bottom;}
 .menu ul {width:578px; margin:0 auto; display:block; height:138px; background:url(/assets/menu.png) no-repeat; padding:6px;}
 .menu ul li {float:left; width:138px; margin:0 0 0 -28px;}
-.menu ul li a {font-size:24px; color:#FFFFFF; text-decoration:none; line-height:24px; text-align:center; display:block; height:118px; padding-top:45px;}
+.menu ul li a {font-size:24px; color:#FFFFFF; text-decoration:none; line-height:24px; text-align:center; display:block; height:118px; padding-top:45px; cursor:pointer;}
 .menu ul li:first-child {margin:0;}
 
 #page1 {width:100%; float:left;  padding-bottom:30px; background:url(/assets/line.gif) repeat-x bottom left; position:relative;}
@@ -38,13 +38,13 @@ h2 span {display:block; padding-top:50px; text-align:center; line-height:24px;}
 
 .twiterr {float:right; margin:142px -80px 0 0;}
 
-.color {position:absolute; left:-84px; top:195px; width:31px;}
+.color {display: block; display: none; position: fixed; left:50%; top:50%; width:31px; margin:-50px 0 0 -400px;}
 .color ul {list-style:none; float:left; padding-top:3px;}
 .color ul li { width:25px; height:25px; float:left; padding:6px 0 0 6px; margin-top:-3px;}
-.color ul li a {float:left; width:19px; height:19px; position:relative;
+.color ul li a {float:left; width:19px; height:19px; position:relative; cursor:pointer;
 -moz-border-radius:9px;
 -webkit-border-radius:9px;
-border-radius: 9px;}
+border-radius: 9px; behavior: url(html/js/PIE.htc);}
 .color ul li.active {background:url(/assets/color_active.png) no-repeat; position:relative; z-index:5;}
 
 #page2 {width:100%; float:left; padding-bottom:35px; background:url(/assets/line.gif) repeat-x bottom left;}
@@ -70,9 +70,6 @@ border-radius: 9px;}
 #page3 form .w2.c label {padding:0 0 0 9px; display:inline-block; vertical-align:top; margin-top:-1px;}
 
 .fields .w2 input, .fields .w2 select { font-size:14px; color:#706f6f; width:201px; padding:9px 10px; background:url(/assets/inp.png) no-repeat; border:0; outline:none;}
-.w2.c label input {
-  margin: 0 10px 0 -10px;
-}
 
 #page5 {padding-bottom:35px;}
 #page5 ul {list-style:none; padding-top:17px;}
@@ -104,7 +101,7 @@ border-radius: 9px;}
 .item3 { background:url(/assets/item3.png) no-repeat;}
 
 
-
+.up {position:fixed; right:50px; top:50%; display: block; display: none; cursor:pointer;}
 
 
 

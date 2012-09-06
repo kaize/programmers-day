@@ -10,12 +10,14 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-// = require jquery
+// = require jquery_javascript_library
 // = require fancybox
 // = require jquery.jcarousel.min
 // = require cufon-yui.js
 // = require cufon.js
 // = require myriad_pro_400.font.js
+// = require scrollTo
+// = require scrolling
 
 $(function() {
 
@@ -67,7 +69,7 @@ $(function() {
     $(document).keyup(function(e){
 
         if (keypressed.join('') == '80827971')
-            $.fancybox.open({href: '/assets/card.jpg'});
+            $.fancybox.open({href: '/assets/card.jpg'}, {autoResize: true});
 
         keypressed = [];
     });
