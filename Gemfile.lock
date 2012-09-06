@@ -205,7 +205,7 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    validates (0.0.5)
+    validates (0.0.6)
       activemodel (>= 3.0.0)
 
 PLATFORMS
