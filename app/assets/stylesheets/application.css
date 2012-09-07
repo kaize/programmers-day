@@ -66,8 +66,13 @@ input:-ms-input-placeholder {
   color: #706f6f;
 }
 
+input.boolean {
+  margin: 0 10px 0 -10px;
+}
+
 .error .help-inline {
   color: red;
+  display: block;
 }
 
 #page5 table {
