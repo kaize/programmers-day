@@ -15,7 +15,7 @@ ru:
         copyright: "НП «Содействие развитию ИТ»"
   member_mailer:
     welcome:
-      subject: "Вы зарегистрирования на День программиста"
+      subject: "Вы зарегистрированы на День программиста"
   time:
     formats:
       day_dot_month_dot_year: "%d.%m.%Y"
