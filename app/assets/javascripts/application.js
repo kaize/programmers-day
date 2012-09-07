@@ -58,6 +58,20 @@ $(function() {
 
     countdown();
 
+    function uniq(arr) {
+
+        arr = arr.sort();
+
+        var i = 0, res = [], l = arr.length - 1;
+        if (l < 0) return res;
+        res.push(arr[0]);
+        while (i < l)
+           if (arr[++ i] != arr[i - 1])
+               res.push(arr[i]);
+
+        return res;
+    }
+
     var keypressed = [];
 
     $(document).keydown(function(e){
@@ -66,7 +80,7 @@ $(function() {
     });
 
     $(document).keyup(function(e){
-        value = $.unique(keypressed).sort().join('');
+        value = uniq(keypressed).join('');
         if (value == '71798082')
             $.fancybox.open({href: '/assets/card.jpg'}, {autoResize: true});
 
