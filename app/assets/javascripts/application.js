@@ -78,7 +78,8 @@ $(function() {
         $('form .fields input').each(function() {
 
             var placeholder = $(this).attr('placeholder');
-            $(this).val(placeholder);
+            if (! $(this).val())
+                $(this).val(placeholder);
 
             $(this).focusin(function(){
 
