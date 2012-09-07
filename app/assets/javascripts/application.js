@@ -75,7 +75,7 @@ $(function() {
 
     if ($.browser.msie) {
 
-        $('form input[type="text"]').each(function() {
+        $('form .fields input').each(function() {
 
             var placeholder = $(this).attr('placeholder');
             $(this).val(placeholder);
@@ -95,7 +95,7 @@ $(function() {
 
         $('form').submit(function() {
 
-            $(this).find('input[type="text"').each(function() {
+            $(this).find('.fields input').each(function() {
 
                 if ($(this).val() == $(this).attr('placeholder'))
                     $(this).val('');

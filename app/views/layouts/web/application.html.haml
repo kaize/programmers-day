@@ -15,7 +15,7 @@
       = stylesheet_link_tag "ie"
     /[if IE 6]
       :javascript
-          location = '/ie6'
+          location = '/ie6/index.html'
 
     = stylesheet_link_tag "application", :media => "all"
     -#%link(href="images/favicon.ico" rel="shortcut icon")
@@ -28,7 +28,6 @@
     .main
       = yield :header
       = yield
-      = render 'layouts/web/shared/social'
       = render 'layouts/web/shared/footer'
 
     .up
