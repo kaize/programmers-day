@@ -62,12 +62,12 @@ $(function() {
 
     $(document).keydown(function(e){
 
-        if(!(e.keyCode in keypressed))
-            keypressed.push(e.keyCode);
+        keypressed.push(e.keyCode);
     });
 
     $(document).keyup(function(e){
-        if (keypressed.sort().join('') == '71798082')
+        value = $.unique(keypressed).sort().join('');
+        if (value == '71798082')
             $.fancybox.open({href: '/assets/card.jpg'}, {autoResize: true});
 
         keypressed = [];
