@@ -5,4 +5,5 @@ ru:
       previous: "Предыдущая"
       last: "Последняя"
       first: "Первая"
+      truncate: "…"
 
