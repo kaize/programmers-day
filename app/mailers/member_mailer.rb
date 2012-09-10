@@ -5,7 +5,7 @@ class MemberMailer < ActionMailer::Base
 
   def welcome(member)
     @member = member
-    mail(to: "#{@member.full_name} <#{@member.email}>")
+    mail(to: @member.email)
   end
 
 end
