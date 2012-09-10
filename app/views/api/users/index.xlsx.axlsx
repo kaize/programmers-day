@@ -1,0 +1,7 @@
+attrs = [:full_name, :email, :phone, :age, :company, :university, :course, :excursio, :subscribe]
+xlsx_package.workbook.add_worksheet(name: 'sheet1') do |sheet|
+  sheet.add_row attrs.map { |c| User.human_attribute_name(c) }
+  @users.each do |user|
+    sheet.add_row attrs.map { |a| user.send(a).to_s }
+  end
+end
