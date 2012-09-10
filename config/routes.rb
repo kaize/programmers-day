@@ -19,4 +19,8 @@ ProgrammersDay::Application.routes.draw do
     end
   end
 
+  namespace :api do
+    resources :users, only: [:index]
+  end
+
 end

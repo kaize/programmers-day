@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'airbrake'
+gem 'axlsx_rails'
 gem 'backup', '~> 3.0.25'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'carrierwave'
