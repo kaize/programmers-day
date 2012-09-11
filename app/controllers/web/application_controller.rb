@@ -1,5 +1,4 @@
 class Web::ApplicationController < ApplicationController
-  include AuthHelper
   include FlashHelper
 
   before_filter :base_title
