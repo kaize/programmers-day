@@ -19,6 +19,10 @@ page_feedback = Page.find_or_initialize_by_uri 'feedback'
 page_feedback.name = 'Вопросы'
 page_feedback.save
 
+page_subscribe = Page.find_or_initialize_by_uri 'subscribe'
+page_subscribe.name = 'Подписка'
+page_subscribe.save
+
 ['1', '2', '3', '4', '5', '6', 'Выпускник', 'Абитуриент'].each do |name|
   course = Course.find_or_initialize_by_name name
   course.save

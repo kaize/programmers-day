@@ -7,6 +7,7 @@ ru:
           programmers_day: ""
           news: "Наши<br>Новости"
           info: "Информация и<br>Программа"
+          #registration: "Хочу<br>Пойти!"
           registration: "Хочу<br>Пойти!"
           questions: "Возник<br>Вопрос?"
           organizators: "Организаторы и<br>Партнёры"
@@ -41,6 +42,7 @@ ru:
       show:
         news: "Наши<br>Новости"
         info: "Информация и<br>Программа"
+        #registration: "Хочу<br>Пойти!"
         registration: "Хочу<br>Пойти!"
         questions: "Возник<br>Вопрос?"
         organizators: "Организаторы и<br>Партнёры"
