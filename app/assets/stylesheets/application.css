@@ -84,3 +84,9 @@ input.boolean {
   text-align: center;
   vertical-align: middle;
 }
+
+.text { 
+  padding: 18px 18px 12px 18px; 
+  font-size: 15px; 
+  line-height: 18px; 
+}
