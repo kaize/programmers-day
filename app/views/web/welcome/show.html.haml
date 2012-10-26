@@ -25,7 +25,8 @@
     %h2
       %span
         != t('.registration')
-    = render 'web/members/form', url: members_path
+    -#= render 'web/members/form', url: members_path
+    != @subscribe.body
 #page4
   .cent
     %h2
