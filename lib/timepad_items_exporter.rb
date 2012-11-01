@@ -16,9 +16,19 @@ class TimepadItemsExporter
         comment: "#{u.university} #{u.course}"
       }
 
-      response << Timepad.maillist.add_items(maillist_id, [subscriber])
+      subscribers << subscriber
+
+      if subscribers.length == 10
+        response << self.add_items(maillist_id, subscribers)
+        subscribers = []
+      end
     end
 
-    response
+    response << self.add_items(maillist_id, subscribers)
   end
+
+  def self.add_items(maillist_id, items)
+    Timepad.maillist.add_items(maillist_id, items)
+  end
+
 end
