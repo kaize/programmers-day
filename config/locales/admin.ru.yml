@@ -33,6 +33,8 @@ ru:
           new: "Добавить"
           delete_confirm: "Точно удалить пользователя?"
           xls: "Скачать список в формате XLSX"
+          refresh_list: "Обновить меню списков"
+          timepad_export: "Экспорт в список рассылки Timepad"
         edit:
           user_edit: "Редактирование пользователя"
         new:

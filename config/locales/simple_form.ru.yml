@@ -13,6 +13,8 @@ ru:
         company: "Компания"
         university: "Университет"
         course: "Курс"
+      timepad_maillists:
+        timepad_export: "Экспорт в список рассылки Timepad"
     placeholders:
       user:
         first_name: "Имя *"

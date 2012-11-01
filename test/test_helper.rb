@@ -10,5 +10,8 @@ require 'rails/test_help'
 
 class ActiveSupport::TestCase
   include AuthHelper
+  include TestSupport
   include FactoryGirl::Syntax::Methods
 end
+
+require 'mocha'

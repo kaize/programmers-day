@@ -6,6 +6,8 @@ FactoryGirl.define do
     last_name { generate :string }
     phone { generate :phone }
     course
+    excursio false
+    subscribe false
   end
 
   factory :active_user, parent: :user do

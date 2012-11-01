@@ -1,3 +1,15 @@
+.pull-right.span5
+  = simple_form_for :timepad_maillists, url: export_admin_timepad_items_path, method: :put,
+    html: { class: 'form-inline' } do |f|
+    .controls
+      = f.input :id, collection: TimepadMaillist.all, wrapper: :inline,
+        prompt: t('.timepad_export'), input_html: { class: 'span3' }
+      = link_to import_api_timepad_maillists_path, class: 'btn refresh-timepad-maillists',
+        title: t('.refresh_list') do
+        %i.icon-refresh
+      &nbsp;
+      = f.button :submit, class: 'btn-primary'
+
 .page-header
   = link_to api_users_path(format: :xlsx), target: :_blank, class: 'btn btn-success pull-right' do
     %i.icon-download-alt
