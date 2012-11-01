@@ -1,3 +1,5 @@
+# encoding utf-8
+
 class TimepadItemsExporter
   def self.run(maillist_id)
     users = User.where(subscribe: true)

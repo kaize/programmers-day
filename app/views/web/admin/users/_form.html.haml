@@ -4,15 +4,12 @@
       = f.input :first_name
       = f.input :last_name
       = f.input :email
-      = f.input :password
+      = f.input :phone
     .span6
       = f.input :company
       = f.input :university
-      = f.input :course
-      = f.input :phone
+      = f.association :course
+      = f.input :subscribe
   .form-actions
     = f.button :submit, class: 'btn btn-primary'
     = link_to t('.cancel'), admin_users_path, class: 'btn'
-    - if can_delete_user?(@user)
-      = link_to t('.delete'), admin_user_path(@user), method: :delete, class: 'btn btn-danger pull-right',
-        data: { confirm: t('.delete_confirm') }
