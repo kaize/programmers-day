@@ -35,7 +35,8 @@ $(function() {
 
         select.find('option + option').remove();
         for (i in data.items)
-          select.append('<option value=' + data.items[i].id + '>' + data.items[i].name + '</option>');
+          select.append('<option value=' + data.items[i].id + '>' + data.items[i].name 
+                        + ' (' + data.items[i].items_count + ')' + '</option>');
 
         icon.removeAttr('class').addClass('icon-refresh');
       }, 'json').error( function() {
