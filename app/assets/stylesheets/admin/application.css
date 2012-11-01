@@ -10,8 +10,6 @@
  *
  *= require bootstrap_and_overrides
  *= require jquery.ui.all
- *= require_self
- *= require_tree .
  */
 
 i.icon-refresh {
@@ -26,3 +24,4 @@ i.icon-refresh {
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
+
