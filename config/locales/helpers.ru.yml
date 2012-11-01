@@ -10,3 +10,5 @@ ru:
       user:
         create: "Сохранить"
         update: "Сохранить"
+      timepad_maillists:
+        submit: "Отправить"

@@ -5,6 +5,16 @@
   %h1
     = t('.users')
 
+.pull-right
+  = simple_form_for :timepad_maillists, url: export_admin_timepad_items_path, method: :put,
+    html: { class: 'form-inline' } do |f|
+    = f.input :timepad_export do
+      = f.input :id, collection: TimepadMaillist.all, wrapper: :inline, include_blank: false
+      = link_to import_api_timepad_maillists_path, class: 'btn refresh-timepad-maillists',
+        title: t('.refresh_list') do
+        %i.icon-refresh
+      = f.button :submit, class: 'btn-primary'
+
 .pagination
   = paginate @users
 
