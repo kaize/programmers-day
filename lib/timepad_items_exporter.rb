@@ -4,6 +4,7 @@ class TimepadItemsExporter
   def self.run(maillist_id)
     users = User.where(subscribe: true)
     subscribers = []
+    response = []
 
     users.find_each do |u|
       subscriber = {
@@ -15,7 +16,9 @@ class TimepadItemsExporter
         comment: "#{u.university} #{u.course}"
       }
 
-      Timepad.maillist.add_items maillist_id, [subscriber]
+      response << Timepad.maillist.add_items(maillist_id, [subscriber])
     end
+
+    response
   end
 end

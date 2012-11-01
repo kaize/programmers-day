@@ -14,7 +14,7 @@ class TimepadItemsExporterTest < ActiveSupport::TestCase
 
   test "should export items" do
     response = TimepadItemsExporter.run(@maillist.id)
-    assert_equal @response, response
+    assert_equal @response, response.pop
   end
 
 end
