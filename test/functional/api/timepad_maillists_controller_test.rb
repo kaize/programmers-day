@@ -1,16 +1,19 @@
 require 'test_helper'
 
 class Api::TimepadMaillistsControllerTest < ActionController::TestCase
-  test "should import lists" do
-    list = {
-      id: generate(:integer),
-      name: generate(:name),
-      itemsCount: generate(:integer)
+  setup do
+    @maillist = create :timepad_maillist
+
+    @list = {
+      id: @maillist.original_id,
+      name: @maillist.name,
+      itemsCount: @maillist.items_count
     }
 
-    lists = [list]
-    TimepadMaillistsImporter.stubs(:run).returns(lists)
+    TimepadMaillistsImporter.stubs(:run).returns([@list])
+  end
 
+  test "should import lists" do
     put :import, format: :json
     assert_response :success
   end

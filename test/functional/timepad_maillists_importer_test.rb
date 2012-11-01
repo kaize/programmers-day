@@ -5,7 +5,7 @@ class TimepadMaillistsImporterTest < ActiveSupport::TestCase
     @maillist = create :timepad_maillist
 
     @list = {
-      id: @maillist.id,
+      id: @maillist.original_id,
       name: @maillist.name,
       itemsCount: @maillist.items_count
     }
