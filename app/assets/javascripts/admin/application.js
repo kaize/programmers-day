@@ -24,4 +24,20 @@ $(function() {
     $('input.datepicker').datepicker({
         dateFormat: "yy-mm-dd",
     });
+
+    $('a.popup').popover({placement: 'top', trigger: 'hover'});
+
+    $('a.refresh-timepad-maillists').click( function() {
+
+      var select = $(this).parent().find('select'), i;
+      $.post($(this).attr('href'), '_method=put', function(data) {
+
+        select.empty();
+        for (i in data.items)
+          select.append('<option value=' + data.items[i].id + '>' + data.items[i].name + '</option>');
+
+      }, 'json');
+
+      return false;
+    });
 });

@@ -16,11 +16,21 @@ ProgrammersDay::Application.routes.draw do
       resources :users
       resources :pages
       resources :news
+      resources :timepad_items, only: [] do
+        collection do
+          put :export
+        end
+      end
     end
   end
 
   namespace :api do
     resources :users, only: [:index]
+    resources :timepad_maillists, only: [] do
+      collection do
+        put :import
+      end
+    end
   end
 
 end
