@@ -5,8 +5,8 @@ class TimepadItemsExporter
     users = User.where(subscribe: true)
     subscribers = []
 
-    users.each do |u|
-      subscribers << {
+    users.find_each do |u|
+      subscriber = {
         email: u.email,
         name: u.first_name,
         surname: u.last_name,
@@ -14,8 +14,8 @@ class TimepadItemsExporter
         phone: u.phone,
         comment: "#{u.university} #{u.course}"
       }
-    end
 
-    Timepad.maillist.add_items maillist_id, subscribers
+      Timepad.maillist.add_items maillist_id, [subscriber]
+    end
   end
 end

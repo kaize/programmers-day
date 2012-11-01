@@ -4,6 +4,7 @@ class TimepadItemsExporterTest < ActiveSupport::TestCase
   setup do
     @user = create :user
     @user.subscribe = true
+    @user.save
 
     @maillist = create :timepad_maillist
 
@@ -13,7 +14,7 @@ class TimepadItemsExporterTest < ActiveSupport::TestCase
 
   test "should export items" do
     response = TimepadItemsExporter.run(@maillist.id)
-    assert_equal response, @response
+    assert_equal @response, response
   end
 
 end
