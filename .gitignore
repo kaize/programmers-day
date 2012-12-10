@@ -20,7 +20,6 @@
 /tmp
 /coverage
 /test/reports
-/config/database.yml
 /config/database.yml.dev
 /db/schema.rb
 /public/system
