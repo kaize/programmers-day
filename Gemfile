@@ -15,14 +15,13 @@ gem 'kaminari'
 gem 'mini_magick'
 gem 'mocha'
 gem 'pg'
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.11'
 gem 'ransack'
 gem 'russian'
 gem 'seedbank'
 gem 'simple_form'
 gem 'state_machine'
 gem 'timepad'
-gem 'twitter-bootstrap-rails', '2.1.3'
 gem 'unicorn'
 gem 'usefull_scopes', git: 'https://github.com/kaize/usefull_scopes.git'
 gem 'validates'
@@ -31,15 +30,16 @@ gem 'validates'
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'jquery-ui-rails'
+  gem 'less-rails'
   gem 'sass-rails',   '~> 3.2.3'
-  gem 'therubyracer', '0.10.2', platform: :ruby
+  gem 'twitter-bootstrap-rails'
+  gem 'therubyracer', platform: :ruby
   gem 'uglifier', '>= 1.0.3'
 end
 
 group :development do
   gem 'capi'
   gem 'capistrano'
-  gem 'capistrano_colors'
   gem 'capistrano-ext'
   gem 'rvm-capistrano'
 end

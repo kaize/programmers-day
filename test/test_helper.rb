@@ -14,4 +14,4 @@ class ActiveSupport::TestCase
   include FactoryGirl::Syntax::Methods
 end
 
-require 'mocha'
+require 'mocha/setup'
