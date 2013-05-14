@@ -4,7 +4,7 @@ set :default_stage, "staging"
 require 'capistrano/ext/multistage'
 require 'capi/unicorn'
 
-set :application, "programmers-day"
+set :application, "prog73"
 set :rvm_type, :system
 
 set :scm, :git
