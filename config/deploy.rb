@@ -8,7 +8,7 @@ set :application, "prog73"
 set :rvm_type, :system
 
 set :scm, :git
-set :repository,  "git@github.com:kaize/programmers-day.git"
+set :repository,  "git://github.com/kaize/programmers-day.git"
 
 set :use_sudo, false
 set :ssh_options, :forward_agent => true
