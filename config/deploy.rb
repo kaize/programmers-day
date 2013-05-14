@@ -4,11 +4,11 @@ set :default_stage, "staging"
 require 'capistrano/ext/multistage'
 require 'capi/unicorn'
 
-set :application, "programmers-day"
+set :application, "prog73"
 set :rvm_type, :system
 
 set :scm, :git
-set :repository,  "git@github.com:kaize/programmers-day.git"
+set :repository,  "git://github.com/kaize/programmers-day.git"
 
 set :use_sudo, false
 set :ssh_options, :forward_agent => true
@@ -17,7 +17,7 @@ default_run_options[:pty] = true
 namespace :deploy do
   desc "Symlinks the database.yml"
   task :symlink_db, :roles => :app do
-    run "ln -nfs #{release_path}/config/database.yml.sample #{release_path}/config/database.yml"
+    run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   end
 end
 
