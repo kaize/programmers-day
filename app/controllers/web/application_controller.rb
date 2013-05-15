@@ -1,7 +1,7 @@
 class Web::ApplicationController < ApplicationController
   include FlashHelper
 
-  before_filter :base_title
+  before_filter :base_title, :staging_basic_auth
 
   helper_method :title
 
