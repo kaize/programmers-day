@@ -5,5 +5,5 @@ role :db,  "62.76.190.226", :primary => true # This is where Rails migrations wi
 role :app, "62.76.190.226"
 role :web, "62.76.190.226"
 
-set :branch, "develop"
+set :branch, "staging"
 set :keep_releases, 3
