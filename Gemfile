@@ -21,6 +21,7 @@ gem 'russian'
 gem 'seedbank'
 gem 'simple_form'
 gem 'state_machine'
+gem 'twitter-bootstrap-rails'
 gem 'timepad'
 gem 'unicorn'
 gem 'usefull_scopes', git: 'https://github.com/kaize/usefull_scopes.git'
@@ -31,7 +32,6 @@ group :assets do
   gem 'jquery-ui-rails'
   gem 'less-rails'
   gem 'sass-rails',   '~> 3.2.3'
-  gem 'twitter-bootstrap-rails'
   gem 'therubyracer', platform: :ruby
   gem 'uglifier', '>= 1.0.3'
 end
