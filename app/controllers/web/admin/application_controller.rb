@@ -1,4 +1,4 @@
 class Web::Admin::ApplicationController < Web::ApplicationController
-  before_filter :basic_auth unless Rails.env.test?
+  before_filter :basic_auth
 
 end

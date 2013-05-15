@@ -22,5 +22,9 @@ Configus.build Rails.env do
   end
 
   env :staging, parent: :production do
+    basic_auth do
+      username 'admin'
+      password '123654'
+    end
   end
 end
