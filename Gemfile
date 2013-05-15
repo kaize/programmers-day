@@ -15,7 +15,7 @@ gem 'kaminari'
 gem 'mini_magick'
 gem 'mocha'
 gem 'pg'
-gem 'rails', '3.2.11'
+gem 'rails', '>= 3.2.11'
 gem 'ransack'
 gem 'russian'
 gem 'seedbank'
@@ -25,7 +25,6 @@ gem 'timepad'
 gem 'unicorn'
 gem 'usefull_scopes', git: 'https://github.com/kaize/usefull_scopes.git'
 gem 'validates'
-#gem 'whenever'
 
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
@@ -47,8 +46,7 @@ end
 group :test do
   gem 'ci_reporter'
   gem 'factory_girl_rails'
-  gem 'minitest'
+  gem 'minitest', '4.5.0'
   gem 'simplecov', require: false
   gem 'turn'
 end
-
