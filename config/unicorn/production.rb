@@ -1,6 +1,6 @@
 # coding: UTF-8
 
-APP_PATH = "/u/apps/programmers-day"
+APP_PATH = "/u/apps/prog73"
 
 # Sample verbose configuration file for Unicorn (not Rack)
 #
